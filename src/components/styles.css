@@ -1,0 +1,125 @@
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.scrollbar-container {
+  
+ /* Background color of the container */
+    
+    cursor: pointer;
+
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  
+  /* Customize scrollbar */
+  .scrollbar-container::-webkit-scrollbar {
+    
+    width: 3px; 
+    background-color: #000; /* Background color of the scrollbar */
+  }
+  
+  .scrollbar-container::-webkit-scrollbar-thumb {
+    background-color: #4b4b4b; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+  }
+
+  .box {
+
+    /* background-color: #ffffff; Adjust background color as needed */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);/* Box shadow with horizontal offset, vertical offset, blur radius, and color */
+  }
+
+
+  .ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+
+
+
+  /* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  color: #514b82;
+  background: 
+    conic-gradient(from 90deg at 3px 3px,#0000 90deg,currentColor 0)
+    -3px -3px/calc(50% + 1.5px) calc(50% + 1.5px);
+  animation: l28 2s infinite;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+  border-radius: 50%;
+}
+.loader::after {
+  margin: 20%;
+}
+@keyframes l28 {
+  100% {transform: rotate(1turn)}
+}
+
+
+
+
+
+.group {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.group:hover .tooltip {
+  display: block;
+}
