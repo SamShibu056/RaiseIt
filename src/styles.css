@@ -1,0 +1,16 @@
+.text-font {
+    font-family: 'Open Sans', sans-serif;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  @keyframes moveRight {
+    from {
+      margin-left: 0;
+    }
+    to {
+      margin-left: 30px;
+    }
+  }
+  
