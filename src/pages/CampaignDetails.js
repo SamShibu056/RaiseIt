@@ -59,7 +59,7 @@ const CampaignDetails = () => {
         icon: "success",
       });
 
-      navigate("/");
+      navigate("/campaigns");
     } catch (error) {
       setLoading(false);
       toast.error("Transaction Error. Please Try Again.", {
