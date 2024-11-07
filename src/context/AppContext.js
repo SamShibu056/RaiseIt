@@ -3,7 +3,7 @@ import { useState } from "react";
 export const AppContext = createContext();
 
 export default function AppContextProvider({children}){
-	const contractAddress = "0x29038780A17674eDF2dB0111C72A7827bDC825c9";
+	const contractAddress = "0x09637A30fcE15385419334ca6fD939F822394C52";
 	//0x09637A30fcE15385419334ca6fD939F822394C52 holesky deployed
     const [walletAddress, setWalletAddress] = useState("");
     const addWalletListener = async () => {
